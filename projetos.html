@@ -1,97 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projetos desenvolvidos por Júlia Galvão - Desenvolvedora Frontend.">
     <title>Projetos | Júlia Galvão</title>
 
+    <link rel="stylesheet" href="./assets/css/projetos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Font Awesome (ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- HEADER -->
     <header>
-        <h1><i class="fa-solid fa-folder-open"></i> Meus Projetos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-user"></i> Sobre</a></li>
-                <li><a href="projetos.html"><i class="fa-solid fa-folder-open"></i> Projetos</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <p><i class="fa-solid fa-folder-open"></i> Meus Projetos</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-user"></i> Sobre</a></li>
+                    <li><a href="projetos.html"><i class="fa-solid fa-folder-open"></i> Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <!-- MAIN -->
+    <main class="container">
 
-        <p>
-            Projetos de desenvolvimento web com foco em usabilidade, responsividade
-            e boas práticas, utilizando HTML, CSS, JavaScript e frameworks modernos.
-        </p>
-
-        <hr>
-
-        <!-- Projeto 1 -->
-        <article>
-            <h2><i class="fa-solid fa-moon"></i> Travel of the Night</h2>
-            <img src="assets/img/travel.png" alt="Prévia do projeto Travel of the Night" width="500">
+        <section class="intro">
             <p>
-                Site temático de viagens noturnas, com foco em design imersivo e
-                responsividade. Desenvolvido com HTML, CSS e JavaScript.
+                Projetos de desenvolvimento web com foco em usabilidade, responsividade
+                e boas práticas, utilizando HTML, CSS, JavaScript e frameworks modernos.
             </p>
-            <p>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="projetos">
+
+            <article class="card">
+                <h2><i class="fa-solid fa-moon"></i> Travel of the Night</h2>
+                <img src="assets/img/travel.png" alt="Travel of the Night">
+                <p>Site temático de viagens noturnas, com foco em design imersivo e responsividade.</p>
                 <a href="https://travelofthenight.netlify.app/" target="_blank">
                     <i class="fa-solid fa-up-right-from-square"></i> Acessar projeto
                 </a>
-            </p>
-        </article>
+            </article>
 
-        <hr>
-
-        <!-- Projeto 2 -->
-        <article>
-            <h2><i class="fa-solid fa-shirt"></i> House of Layla</h2>
-            <img src="assets/img/layla.png" alt="Prévia do projeto House of Layla" width="500">
-            <p>
-                Landing page elegante de moda feminina, com layout minimalista e
-                tipografia refinada.
-            </p>
-            <p>
+            <article class="card">
+                <h2><i class="fa-solid fa-shirt"></i> House of Layla</h2>
+                <img src="assets/img/layla.png" alt="House of Layla">
+                <p>Landing page elegante de moda feminina, com layout minimalista.</p>
                 <a href="https://houseoflayla.netlify.app/" target="_blank">
                     <i class="fa-solid fa-up-right-from-square"></i> Acessar projeto
                 </a>
-            </p>
-        </article>
+            </article>
 
-        <hr>
-
-        <!-- Projeto 3 -->
-        <article>
-            <h2><i class="fa-solid fa-paw"></i> Mágicas Patinhas</h2>
-            <img src="assets/img/patinhas-magicas.png" alt="Prévia do projeto Mágicas Patinhas" width="500">
-            <p>
-                Site lúdico e divertido voltado para o universo pet, com identidade
-                visual leve e amigável.
-            </p>
-            <p>
+            <article class="card">
+                <h2><i class="fa-solid fa-paw"></i> Mágicas Patinhas</h2>
+                <img src="assets/img/patinhas-magicas.png" alt="Mágicas Patinhas">
+                <p>Site lúdico e divertido voltado para o universo pet.</p>
                 <a href="https://magicaspatinhas.netlify.app/" target="_blank">
                     <i class="fa-solid fa-up-right-from-square"></i> Acessar projeto
                 </a>
-            </p>
-        </article>
+            </article>
 
-        <hr>
+        </section>
 
-        <p>
-            <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Voltar para a página inicial</a>
-        </p>
+        <div class="back">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i> Voltar para a página inicial
+            </a>
+        </div>
 
     </main>
 
-    <!-- Rodapé -->
+    <!-- FOOTER -->
     <footer>
-        <p><i class="fa-regular fa-copyright"></i> 2026 Júlia Galvão Almeida Santos. Todos os direitos reservados.</p>
+        <p>© 2026 Júlia Galvão Almeida Santos. Todos os direitos reservados.</p>
     </footer>
 
 </body>
+
 </html>
