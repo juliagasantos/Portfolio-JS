@@ -7,7 +7,7 @@ function animarProjetos() {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.add("show");
-                }, i * 120); // delay suave em cascata
+                }, i * 120);
             }
         });
     }, {
@@ -24,8 +24,6 @@ function buscaProjetos() {
     const cards = document.querySelectorAll(".card");
 
     if (!input || cards.length === 0) return;
-
-    // normaliza texto (remove acentos)
     const normalizar = (texto) => {
         return texto
             .toLowerCase()
@@ -33,7 +31,6 @@ function buscaProjetos() {
             .replace(/[\u0300-\u036f]/g, "");
     };
 
-    // mensagem "nenhum resultado"
     let mensagem = document.querySelector(".sem-resultados");
 
     if (!mensagem) {
@@ -53,7 +50,7 @@ function buscaProjetos() {
             const texto = normalizar(card.innerText);
 
             if (texto.includes(valor)) {
-                card.style.display = ""; // 👈 mantém o grid correto
+                card.style.display = ""; 
                 visiveis++;
             } else {
                 card.style.display = "none";
@@ -101,7 +98,6 @@ function cardClicavel() {
         const link = card.querySelector("a");
 
         card.addEventListener("click", (e) => {
-            // evita conflito se clicar direto no link
             if (e.target.tagName !== "A") {
                 link.click();
             }

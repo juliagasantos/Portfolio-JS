@@ -98,7 +98,6 @@ header {
   background-color: var(--bg);
   border-bottom: 1px solid var(--border);
 
-  /* efeito mais moderno (opcional) */
   backdrop-filter: blur(10px);
   background: rgba(8, 8, 12, 0.7);
 
@@ -349,7 +348,7 @@ header {
     gap: 3em;
   }
 
-  /* título */
+
   .titulo {
     display: flex;
     align-items: center;
@@ -387,7 +386,7 @@ header {
 
     transition: var(--transition);
 
-    /* glow suave */
+
     &::before {
       content: "";
       position: absolute;
@@ -599,7 +598,7 @@ footer {
 
 }
 
-/* animação */
+
 section,
 .card {
   opacity: 0;
@@ -612,13 +611,11 @@ section,
   transform: translateY(0);
 }
 
-/* header ativo */
 header.ativo {
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 }
 
-/* link ativo */
 nav a.ativo {
   color: #00f0ff;
 }
